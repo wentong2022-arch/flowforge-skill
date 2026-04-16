@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+    <diagram name="Monolith vs Microservices" id="compare_001">
+        <mxGraphModel dx="0" dy="0" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="610" pageHeight="553" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title_main" value="Monolith vs Microservices" style="text;html=1;fontSize=18;fontColor=#4A4A4A;align=center;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="10" width="530" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_h1" value="Monolith" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E2EA;strokeColor=#92A8BC;strokeWidth=1.2;arcSize=10;fontSize=14;fontColor=#4A4A4A;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="118" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_vs" value="VS" style="text;html=1;fontSize=14;fontColor=#7B6B8A;align=center;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="118" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_h2" value="Microservices" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2D8E6;strokeColor=#B5A3BC;strokeWidth=1.2;arcSize=10;fontSize=14;fontColor=#4A4A4A;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="118" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_l1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E2EA;strokeColor=#92A8BC;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="193" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_l1_t" value="&lt;b&gt;Deployment&lt;/b&gt;" style="text;html=1;fontSize=13;fontColor=#4A4A4A;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="198" width="160" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_l1_b" value="&amp;bull; Single deployable unit&lt;br&gt;&amp;bull; All-or-nothing release&lt;br&gt;&amp;bull; Simple CI/CD" style="text;html=1;fontSize=10;fontColor=#7A7A7A;align=left;verticalAlign=top;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="223" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_r1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2D8E6;strokeColor=#B5A3BC;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="193" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_r1_t" value="&lt;b&gt;Deployment&lt;/b&gt;" style="text;html=1;fontSize=13;fontColor=#4A4A4A;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="198" width="160" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_r1_b" value="&amp;bull; Independent deploys&lt;br&gt;&amp;bull; Per-service releases&lt;br&gt;&amp;bull; Complex orchestration" style="text;html=1;fontSize=10;fontColor=#7A7A7A;align=left;verticalAlign=top;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="223" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_l2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E2EA;strokeColor=#92A8BC;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="308" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_l2_t" value="&lt;b&gt;Scaling&lt;/b&gt;" style="text;html=1;fontSize=13;fontColor=#4A4A4A;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="313" width="160" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_l2_b" value="&amp;bull; Scale entire app&lt;br&gt;&amp;bull; Vertical scaling&lt;br&gt;&amp;bull; Resource wasteful" style="text;html=1;fontSize=10;fontColor=#7A7A7A;align=left;verticalAlign=top;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="338" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_r2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2D8E6;strokeColor=#B5A3BC;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="308" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_r2_t" value="&lt;b&gt;Scaling&lt;/b&gt;" style="text;html=1;fontSize=13;fontColor=#4A4A4A;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="313" width="160" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_r2_b" value="&amp;bull; Scale per service&lt;br&gt;&amp;bull; Horizontal scaling&lt;br&gt;&amp;bull; Resource efficient" style="text;html=1;fontSize=10;fontColor=#7A7A7A;align=left;verticalAlign=top;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="338" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_l3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E2EA;strokeColor=#92A8BC;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="423" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_l3_t" value="&lt;b&gt;Complexity&lt;/b&gt;" style="text;html=1;fontSize=13;fontColor=#4A4A4A;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="428" width="160" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_l3_b" value="&amp;bull; Simple codebase&lt;br&gt;&amp;bull; Easy to understand&lt;br&gt;&amp;bull; Hard to maintain at scale" style="text;html=1;fontSize=10;fontColor=#7A7A7A;align=left;verticalAlign=top;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="453" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_r3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2D8E6;strokeColor=#B5A3BC;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="423" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_r3_t" value="&lt;b&gt;Complexity&lt;/b&gt;" style="text;html=1;fontSize=13;fontColor=#4A4A4A;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="428" width="160" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_r3_b" value="&amp;bull; Distributed complexity&lt;br&gt;&amp;bull; Steep learning curve&lt;br&gt;&amp;bull; Better long-term agility" style="text;html=1;fontSize=10;fontColor=#7A7A7A;align=left;verticalAlign=top;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="453" width="140" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

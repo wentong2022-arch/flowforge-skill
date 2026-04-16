@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net">
+    <diagram name="ML Training Loop" id="loop_001">
+        <mxGraphModel dx="0" dy="0" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="560" pageHeight="338" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title_main" value="ML Training Loop" style="text;html=1;fontSize=18;fontColor=#1A3A3A;align=center;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="10" width="480" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_1" value="Prepare Data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F5F0;strokeColor=#6DBFAB;strokeWidth=1.2;arcSize=10;fontSize=13;fontColor=#1A3A3A;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="118" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_2" value="Train Model" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCF0E8;strokeColor=#2A9D8F;strokeWidth=1.2;arcSize=10;fontSize=13;fontColor=#1A3A3A;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="118" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_3" value="Evaluate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCF0E8;strokeColor=#2A9D8F;strokeWidth=1.2;arcSize=10;fontSize=13;fontColor=#1A3A3A;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="248" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_4" value="Tune Hyperparams" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#E9A84C;strokeWidth=1.2;arcSize=10;fontSize=13;fontColor=#1A3A3A;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="248" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_1_2" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#9DC0B7;strokeWidth=0.8;endSize=5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="node_1" target="node_2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_2_3" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#9DC0B7;strokeWidth=0.8;endSize=5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node_2" target="node_3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_3_4" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#9DC0B7;strokeWidth=0.8;endSize=5;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="node_3" target="node_4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_4_1" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#9DC0B7;strokeWidth=0.8;endSize=5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="node_4" target="node_1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

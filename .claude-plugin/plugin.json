@@ -1,0 +1,26 @@
+{
+  "name": "flowforge-skill",
+  "version": "1.0.0",
+  "description": "Generate professional draw.io diagrams from natural language — flowcharts, architecture diagrams, comparisons, and more.",
+  "author": {
+    "name": "winstonyoyo",
+    "email": "wentong2022@gmail.com",
+    "url": "https://github.com/winstonyoyo"
+  },
+  "homepage": "https://github.com/winstonyoyo/flowforge-skill",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/winstonyoyo/flowforge-skill.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "claude-skill",
+    "skill",
+    "drawio",
+    "diagram",
+    "flowchart",
+    "architecture-diagram",
+    "visualization"
+  ]
+}

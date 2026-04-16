@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36" version="29.6.6">
+  <diagram name="大模型发展简史" id="timeline_terracotta_001">
+    <mxGraphModel dx="902" dy="470" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="960" pageHeight="380" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title_main" parent="1" style="text;html=1;fontSize=18;fontColor=#3D2C1E;align=center;verticalAlign=middle;fontStyle=1;" value="大模型发展简史" vertex="1">
+          <mxGeometry height="28" width="880" x="35" y="12" as="geometry" />
+        </mxCell>
+        <mxCell id="line_main" edge="1" parent="1" style="endArrow=none;strokeColor=#C4A882;strokeWidth=2.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="200" as="sourcePoint" />
+            <mxPoint x="920" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="event_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0E0CC;strokeColor=#B07D4F;strokeWidth=1.2;arcSize=10;fontSize=11;fontColor=#3D2C1E;verticalAlign=middle;" value="&lt;b&gt;2017.06&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#3D2C1E&quot;&gt;Transformer 论文&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#8A7560&quot;&gt;Attention is All You Need&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="135" x="55" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tick_1" edge="1" parent="1" style="endArrow=none;strokeColor=#C4A882;strokeWidth=1.0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="122" y="160" as="sourcePoint" />
+            <mxPoint x="122" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="event_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0E0CC;strokeColor=#B07D4F;strokeWidth=1.2;arcSize=10;fontSize=11;fontColor=#3D2C1E;verticalAlign=middle;" value="&lt;b&gt;2018.10&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#3D2C1E&quot;&gt;BERT / GPT-1&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#8A7560&quot;&gt;预训练范式确立&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="135" x="200" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="tick_2" edge="1" parent="1" style="endArrow=none;strokeColor=#C4A882;strokeWidth=1.0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="267" y="200" as="sourcePoint" />
+            <mxPoint x="267" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="event_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0E0CC;strokeColor=#B07D4F;strokeWidth=1.2;arcSize=10;fontSize=11;fontColor=#3D2C1E;verticalAlign=middle;" value="&lt;b&gt;2020.05&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#3D2C1E&quot;&gt;GPT-3&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#8A7560&quot;&gt;规模即能力 / 175B&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="135" x="345" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tick_3" edge="1" parent="1" style="endArrow=none;strokeColor=#C4A882;strokeWidth=1.0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="412" y="160" as="sourcePoint" />
+            <mxPoint x="412" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="event_4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAF0E4;strokeColor=#D4956A;strokeWidth=1.5;arcSize=10;fontSize=11;fontColor=#3D2C1E;verticalAlign=middle;" value="&lt;b&gt;2022.11&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#3D2C1E&quot;&gt;ChatGPT 发布&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#8A7560&quot;&gt;5 天 100 万用户&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="135" x="490" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="tick_4" edge="1" parent="1" style="endArrow=none;strokeColor=#C4A882;strokeWidth=1.0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="557" y="200" as="sourcePoint" />
+            <mxPoint x="557" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="event_5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0E0CC;strokeColor=#B07D4F;strokeWidth=1.2;arcSize=10;fontSize=11;fontColor=#3D2C1E;verticalAlign=middle;" value="&lt;b&gt;2023.03&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#3D2C1E&quot;&gt;GPT-4 / Claude&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#8A7560&quot;&gt;多模态 / 长上下文&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="135" x="635" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tick_5" edge="1" parent="1" style="endArrow=none;strokeColor=#C4A882;strokeWidth=1.0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="702" y="160" as="sourcePoint" />
+            <mxPoint x="702" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="event_6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0E0CC;strokeColor=#B07D4F;strokeWidth=1.2;arcSize=10;fontSize=11;fontColor=#3D2C1E;verticalAlign=middle;" value="&lt;b&gt;2025+&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#3D2C1E&quot;&gt;推理与 Agent 时代&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#8A7560&quot;&gt;o3 / Claude 4 / 工具使用&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="135" x="780" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="tick_6" edge="1" parent="1" style="endArrow=none;strokeColor=#C4A882;strokeWidth=1.0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="847" y="200" as="sourcePoint" />
+            <mxPoint x="847" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

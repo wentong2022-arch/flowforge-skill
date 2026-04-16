@@ -1,0 +1,98 @@
+<mxfile host="app.diagrams.net">
+    <diagram name="数据采集入库流程" id="data_collect_002">
+        <mxGraphModel dx="0" dy="0" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="580" pageHeight="733" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <!-- 标题 -->
+                <mxCell id="title_main" value="数据采集入库流程" style="text;html=1;fontSize=18;fontColor=#2D3748;align=center;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="10" width="500" height="28" as="geometry"/>
+                </mxCell>
+                <!-- node_1: 数据源系统 (neutral) -->
+                <mxCell id="node_1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2F7;strokeColor=#A0AEC0;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="68" width="240" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_1_title" value="&lt;b&gt;数据源系统&lt;/b&gt;" style="text;html=1;fontSize=13;fontColor=#2D3748;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="73" width="240" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_1_body" value="&amp;bull; 智慧统计&lt;br&gt;&amp;bull; 一网共享&lt;br&gt;&amp;bull; KPI&lt;br&gt;&amp;bull; 企业数据&lt;br&gt;&amp;bull; 经济运行汇编" style="text;html=1;fontSize=10;fontColor=#718096;align=left;verticalAlign=top;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="98" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <!-- arr_1_2 -->
+                <mxCell id="arr_1_2" style="endArrow=classic;strokeColor=#A0AEC0;strokeWidth=0.8;endSize=5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node_1" target="node_2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <!-- node_2: 定时采集 (process) -->
+                <mxCell id="node_2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F9;strokeColor=#5B8DEF;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="203" width="240" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_2_title" value="&lt;b&gt;① 定时采集 / 事件触发采集&lt;/b&gt;" style="text;html=1;fontSize=13;fontColor=#2D3748;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="208" width="240" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_2_body" value="按预设频率（月/季/年）或触发条件自动采集" style="text;html=1;fontSize=10;fontColor=#718096;align=center;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="233" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <!-- arr_2_3 -->
+                <mxCell id="arr_2_3" style="endArrow=classic;strokeColor=#A0AEC0;strokeWidth=0.8;endSize=5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node_2" target="node_3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <!-- node_3: 数据质量检查 (process — 主流程步骤) -->
+                <mxCell id="node_3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F9;strokeColor=#5B8DEF;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="313" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_3_title" value="&lt;b&gt;② 数据质量检查&lt;/b&gt;" style="text;html=1;fontSize=13;fontColor=#2D3748;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="318" width="240" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_3_body" value="&amp;bull; 完整性：字段和时间段是否齐全&lt;br&gt;&amp;bull; 时效性：更新时间是否在预期范围&lt;br&gt;&amp;bull; 一致性：跨源同一指标是否冲突&lt;br&gt;&amp;bull; 合理性：数值是否在正常范围" style="text;html=1;fontSize=10;fontColor=#718096;align=left;verticalAlign=top;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="343" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <!-- arr_3_4: 全部通过 (左分支) -->
+                <mxCell id="arr_3_4" value="&lt;span style=&quot;font-size:9px;color:#4A7ADB&quot;&gt;全部通过&lt;/span&gt;" style="endArrow=classic;strokeColor=#A0AEC0;strokeWidth=0.8;endSize=5;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node_3" target="node_4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <!-- arr_3_5: 部分不通过 (右分支) -->
+                <mxCell id="arr_3_5" value="&lt;span style=&quot;font-size:9px;color:#E8A87C&quot;&gt;部分不通过&lt;/span&gt;" style="endArrow=classic;strokeColor=#A0AEC0;strokeWidth=0.8;endSize=5;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node_3" target="node_5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <!-- node_4: 清洗对齐 (process — 主流程延续) -->
+                <mxCell id="node_4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F9;strokeColor=#5B8DEF;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="463" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_4_title" value="&lt;b&gt;③ 清洗对齐&lt;/b&gt;" style="text;html=1;fontSize=13;fontColor=#2D3748;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="468" width="220" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_4_body" value="统一时间粒度、计量单位&lt;br&gt;补全缺失标签" style="text;html=1;fontSize=10;fontColor=#718096;align=center;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="493" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <!-- node_5: 标记+告警+降级 (accent — 唯一的转折点) -->
+                <mxCell id="node_5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0E5;strokeColor=#E8A87C;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="463" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_5_title" value="&lt;b&gt;标记 + 告警 + 降级处理&lt;/b&gt;" style="text;html=1;fontSize=13;fontColor=#2D3748;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="468" width="220" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_5_body" value="标记为&quot;预估值&quot;或&quot;待更新&quot;&lt;br&gt;不阻塞后续分析" style="text;html=1;fontSize=10;fontColor=#718096;align=center;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="493" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <!-- arr_4_6 -->
+                <mxCell id="arr_4_6" style="endArrow=classic;strokeColor=#A0AEC0;strokeWidth=0.8;endSize=5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node_4" target="node_6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <!-- arr_5_6 -->
+                <mxCell id="arr_5_6" style="endArrow=classic;strokeColor=#A0AEC0;strokeWidth=0.8;endSize=5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node_5" target="node_6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <!-- node_6: 入库 (primary — 核心输出) -->
+                <mxCell id="node_6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=#5B8DEF;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="583" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_6_title" value="&lt;b&gt;④ 入库&lt;/b&gt;" style="text;html=1;fontSize=13;fontColor=#2D3748;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="588" width="240" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_6_body" value="写入统一经济数据模型&lt;br&gt;&amp;bull; 指标定义库：名称+公式+口径&lt;br&gt;&amp;bull; 数据字典：字段+数据源映射&lt;br&gt;&amp;bull; 历史基准值：用于异常检测" style="text;html=1;fontSize=10;fontColor=#718096;align=left;verticalAlign=top;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="613" width="220" height="70" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

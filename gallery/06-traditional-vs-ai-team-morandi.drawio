@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36" version="29.6.6">
+  <diagram name="传统数据团队 vs AI 增强数据团队" id="cmp_morandi_001">
+    <mxGraphModel dx="889" dy="582" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="610" pageHeight="553" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title_main" parent="1" style="text;html=1;fontSize=18;fontColor=#4A4A4A;align=center;verticalAlign=middle;fontStyle=1;" value="传统数据团队 vs AI 增强数据团队" vertex="1">
+          <mxGeometry height="28" width="530" x="20" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="node_h1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E2EA;strokeColor=#92A8BC;strokeWidth=1.2;arcSize=10;fontSize=14;fontColor=#4A4A4A;fontStyle=1;" value="传统数据团队" vertex="1">
+          <mxGeometry height="50" width="160" x="64" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="node_vs" parent="1" style="text;html=1;fontSize=34;fontColor=#7B6B8A;align=center;verticalAlign=middle;fontStyle=1;" value="VS" vertex="1">
+          <mxGeometry height="50" width="50" x="255" y="239" as="geometry" />
+        </mxCell>
+        <mxCell id="node_h2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2D8E6;strokeColor=#B5A3BC;strokeWidth=1.2;arcSize=10;fontSize=14;fontColor=#4A4A4A;fontStyle=1;" value="AI 增强数据团队" vertex="1">
+          <mxGeometry height="50" width="160" x="338" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="node_l1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E2EA;strokeColor=#92A8BC;strokeWidth=1.2;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="90" width="160" x="64" y="193" as="geometry" />
+        </mxCell>
+        <mxCell id="node_l1_t" parent="1" style="text;html=1;fontSize=13;fontColor=#4A4A4A;align=center;verticalAlign=middle;" value="&lt;b&gt;数据获取&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22" width="160" x="64" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="node_l1_b" parent="1" style="text;html=1;fontSize=10;fontColor=#7A7A7A;align=left;verticalAlign=top;spacingLeft=8;" value="&amp;bull; 手写 SQL 查询&lt;br&gt;&amp;bull; 多系统切换&lt;br&gt;&amp;bull; 提需求等数仓" vertex="1">
+          <mxGeometry height="50" width="140" x="74" y="223" as="geometry" />
+        </mxCell>
+        <mxCell id="node_r1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2D8E6;strokeColor=#B5A3BC;strokeWidth=1.2;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="90" width="160" x="338" y="193" as="geometry" />
+        </mxCell>
+        <mxCell id="node_r1_t" parent="1" style="text;html=1;fontSize=13;fontColor=#4A4A4A;align=center;verticalAlign=middle;" value="&lt;b&gt;数据获取&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22" width="160" x="338" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="node_r1_b" parent="1" style="text;html=1;fontSize=10;fontColor=#7A7A7A;align=left;verticalAlign=top;spacingLeft=8;" value="&amp;bull; 自然语言提问&lt;br&gt;&amp;bull; NL2SQL 自动生成&lt;br&gt;&amp;bull; 即问即答" vertex="1">
+          <mxGeometry height="50" width="140" x="348" y="223" as="geometry" />
+        </mxCell>
+        <mxCell id="node_l2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E2EA;strokeColor=#92A8BC;strokeWidth=1.2;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="90" width="160" x="64" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="node_l2_t" parent="1" style="text;html=1;fontSize=13;fontColor=#4A4A4A;align=center;verticalAlign=middle;" value="&lt;b&gt;分析效率&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22" width="160" x="64" y="313" as="geometry" />
+        </mxCell>
+        <mxCell id="node_l2_b" parent="1" style="text;html=1;fontSize=10;fontColor=#7A7A7A;align=left;verticalAlign=top;spacingLeft=8;" value="&amp;bull; 反复试错调参&lt;br&gt;&amp;bull; 手工写脚本&lt;br&gt;&amp;bull; 平均 3 天交付" vertex="1">
+          <mxGeometry height="50" width="140" x="74" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="node_r2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2D8E6;strokeColor=#B5A3BC;strokeWidth=1.2;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="90" width="160" x="338" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="node_r2_t" parent="1" style="text;html=1;fontSize=13;fontColor=#4A4A4A;align=center;verticalAlign=middle;" value="&lt;b&gt;分析效率&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22" width="160" x="338" y="313" as="geometry" />
+        </mxCell>
+        <mxCell id="node_r2_b" parent="1" style="text;html=1;fontSize=10;fontColor=#7A7A7A;align=left;verticalAlign=top;spacingLeft=8;" value="&amp;bull; LLM 自动写代码&lt;br&gt;&amp;bull; 沙箱即时执行&lt;br&gt;&amp;bull; 平均 30 分钟交付" vertex="1">
+          <mxGeometry height="50" width="140" x="348" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="node_l3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E2EA;strokeColor=#92A8BC;strokeWidth=1.2;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="90" width="160" x="64" y="423" as="geometry" />
+        </mxCell>
+        <mxCell id="node_l3_t" parent="1" style="text;html=1;fontSize=13;fontColor=#4A4A4A;align=center;verticalAlign=middle;" value="&lt;b&gt;报告生成&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22" width="160" x="64" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="node_l3_b" parent="1" style="text;html=1;fontSize=10;fontColor=#7A7A7A;align=left;verticalAlign=top;spacingLeft=8;" value="&amp;bull; PPT 手工制作&lt;br&gt;&amp;bull; 图表逐个画&lt;br&gt;&amp;bull; 全程人工审校" vertex="1">
+          <mxGeometry height="50" width="140" x="74" y="453" as="geometry" />
+        </mxCell>
+        <mxCell id="node_r3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2D8E6;strokeColor=#B5A3BC;strokeWidth=1.2;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="90" width="160" x="338" y="423" as="geometry" />
+        </mxCell>
+        <mxCell id="node_r3_t" parent="1" style="text;html=1;fontSize=13;fontColor=#4A4A4A;align=center;verticalAlign=middle;" value="&lt;b&gt;报告生成&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22" width="160" x="338" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="node_r3_b" parent="1" style="text;html=1;fontSize=10;fontColor=#7A7A7A;align=left;verticalAlign=top;spacingLeft=8;" value="&amp;bull; AI 自动生成初稿&lt;br&gt;&amp;bull; 图表自动配图&lt;br&gt;&amp;bull; 人审 + 一键导出" vertex="1">
+          <mxGeometry height="50" width="140" x="348" y="453" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

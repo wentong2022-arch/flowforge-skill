@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net">
+    <diagram name="CI/CD Pipeline" id="cicd_001">
+        <mxGraphModel dx="0" dy="0" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="900" pageHeight="208" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title_main" value="CI/CD Pipeline" style="text;html=1;fontSize=18;fontColor=#2D3748;align=center;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="10" width="820" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_1" value="Code Commit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=#5B8DEF;strokeWidth=1.2;arcSize=10;fontSize=13;fontColor=#2D3748;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="118" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_2" value="Build" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F9;strokeColor=#5B8DEF;strokeWidth=1.2;arcSize=10;fontSize=13;fontColor=#2D3748;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="118" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_3" value="Test" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F9;strokeColor=#5B8DEF;strokeWidth=1.2;arcSize=10;fontSize=13;fontColor=#2D3748;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="118" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_4" value="Deploy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0E5;strokeColor=#E8A87C;strokeWidth=1.2;arcSize=10;fontSize=13;fontColor=#2D3748;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="118" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_1_2" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#A0AEC0;strokeWidth=0.8;endSize=5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="node_1" target="node_2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_2_3" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#A0AEC0;strokeWidth=0.8;endSize=5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="node_2" target="node_3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_3_4" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#A0AEC0;strokeWidth=0.8;endSize=5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="node_3" target="node_4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

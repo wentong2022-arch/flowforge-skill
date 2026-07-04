@@ -20,22 +20,22 @@ import sys
 import xml.etree.ElementTree as ET
 
 # ---------------------------------------------------------------- themes ----
-# Keep in sync with themes.md. Sets contain every fill/stroke/text color of a theme.
+# Keep in sync with themes.md. Sets contain every fill/stroke/text/bg color of a theme.
 THEMES = {
     "tech-blue": {
-        "#2D3748", "#4A7ADB", "#5B8DEF", "#5BA87C", "#5BA8A0", "#718096", "#8B7EC4", "#A0AEC0", "#CBD5E0", "#D05050", "#D4A843", "#D6E4F9", "#E6F5EC", "#E8A87C", "#E8F0FE", "#E8F4F2", "#EDE8F5", "#EDF2F7", "#F5F7FA", "#FDE8E8", "#FFF0E5", "#FFF8E1",
+        "#2D3748", "#3F72D9", "#45815F", "#5B8DEF", "#5BA87C", "#5BA8A0", "#68778D", "#8496AE", "#8B7EC4", "#95A5B9", "#CBD5E0", "#CC9C2F", "#CE4848", "#D05050", "#D6E4F9", "#E29057", "#E6F5EC", "#E8F0FE", "#E8F4F2", "#EDE8F5", "#EDF2F7", "#F1F5FB", "#F2FAF5", "#F3F9F8", "#F5F3FA", "#F5F7FA", "#FBF5F1", "#FDE8E8", "#FFF0E5", "#FFF8E1",
     },
     "morandi": {
-        "#4A4A4A", "#6A946C", "#7A7A7A", "#7B6B8A", "#8AAE8C", "#8DA898", "#92A8BC", "#9A9A9A", "#9DB599", "#A098B5", "#A87070", "#B5A3BC", "#B5AFA6", "#B89090", "#C0B5A8", "#C4B48E", "#C5BFB8", "#D4DFD8", "#D6E4D8", "#D8E2EA", "#DBD8E6", "#DDE6DB", "#E2D8E6", "#E8D6D6", "#E8E2D2", "#EDE8E1", "#EDEAE6",
+        "#4A4A4A", "#5B7F5D", "#767676", "#7B6B8A", "#88AD8B", "#8DA898", "#8FA5BA", "#90AB8C", "#9C9387", "#A098B5", "#A26666", "#AFA190", "#B09DB8", "#B5A172", "#B89090", "#C5BFB8", "#D4DFD8", "#D6E4D8", "#D8E2EA", "#DBD8E6", "#DDE6DB", "#E2D8E6", "#E8D6D6", "#E8E2D2", "#EDE8E1", "#EDEAE6", "#F3F6F9", "#F3F9F4", "#F5F3F9", "#F9F3F3", "#F9F7F3",
     },
     "mint": {
-        "#1A3A3A", "#2A9D8F", "#3A8E4A", "#4AADA5", "#4AAE5C", "#5A7A7A", "#6DBFAB", "#7A9A94", "#7AA0C0", "#8DBFB0", "#9DC0B7", "#B0D0C5", "#C85050", "#CCF0E8", "#D4A040", "#D4F0D8", "#D8F0EE", "#E0E8F0", "#E0F5F0", "#E8F0ED", "#E9A84C", "#F0F7F5", "#FCE4E4", "#FFF2D6", "#FFF4E6",
+        "#1A3A3A", "#238377", "#2A9D8F", "#368545", "#4AADA5", "#4AAE5C", "#54B49D", "#5A7A7A", "#5E7C76", "#6A9F91", "#71AF9D", "#7AA0C0", "#B0D0C5", "#C74E4E", "#C85050", "#CCF0E8", "#D19A34", "#D4F0D8", "#D8F0EE", "#E0E8F0", "#E0F5F0", "#E3921F", "#E8F0ED", "#F0F7F5", "#F2FAF3", "#F2FBF8", "#F3F6F9", "#FBF1F1", "#FBF7F1", "#FCE4E4", "#FFF2D6", "#FFF4E6",
     },
     "terracotta": {
-        "#3D2C1E", "#6E8A4A", "#8A7560", "#8EA06A", "#9A9478", "#A05040", "#A89088", "#A89279", "#B07060", "#B07D4F", "#C4A040", "#C4A882", "#D0C4B0", "#D4956A", "#E8DDD0", "#E8E0D8", "#E8E4DA", "#E8ECDA", "#F0DCD0", "#F0E0CC", "#F5ECD0", "#F5EDE3", "#F5F0E8", "#FAF0E4",
+        "#3D2C1E", "#657E44", "#87725E", "#897259", "#8EA06A", "#996D45", "#9A9478", "#A05040", "#A89088", "#A89279", "#B07060", "#B07D4F", "#B28D5C", "#BD9E74", "#C39F3E", "#D0C4B0", "#D4956A", "#E8DDD0", "#E8E0D8", "#E8E4DA", "#E8ECDA", "#F0DCD0", "#F0E0CC", "#F5ECD0", "#F5EDE3", "#F5F0E8", "#F8F9F3", "#F9F6F3", "#FAF0E4", "#FBF5F1", "#FBF7F1", "#FBF9F1",
     },
     "indigo": {
-        "#1E293B", "#2A8A50", "#3AA06A", "#3B82F6", "#4080A0", "#4F62B0", "#64748B", "#6B50B0", "#7C3AED", "#7C8DB5", "#94A3B8", "#A0AAC8", "#D49A20", "#D4F0E0", "#D8E8F0", "#DBEAFE", "#DC2626", "#DDD6FE", "#E0D8F0", "#E0E7FF", "#E8ECF4", "#EEF0F8", "#FEE2E2", "#FEF3C7",
+        "#1E293B", "#29864E", "#3AA06A", "#3B82F6", "#4080A0", "#4F62B0", "#637895", "#64748B", "#6B50B0", "#7C3AED", "#7C8DB5", "#8596AE", "#A0AAC8", "#D29820", "#D4F0E0", "#D8E8F0", "#DBEAFE", "#DC2626", "#DDD6FE", "#E0D8F0", "#E0E7FF", "#E8ECF4", "#EEF0F8", "#F1F5FB", "#F2F7FA", "#F2FAF5", "#F5F2FA", "#FBF9F1", "#FEE2E2", "#FEF3C7",
     },
 }
 

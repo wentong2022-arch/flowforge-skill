@@ -51,7 +51,30 @@ CANVAS_W = 40 + 370 + 160 + 40 = 610
 CANVAS_H = 423 + 90 + 40 = 553
 ```
 
-### Walkthrough 3: `loop` (loop-ml-training.drawio)
+### Walkthrough 3: `tree` (tree-storage-decision.drawio)
+
+The core tree rule: lay out the deepest level first, then center each parent over the span of its children.
+
+```
+Root + 4 rich children (NODE_W = 160, NODE_H_RICH = 90), CANVAS_PAD = 40, TITLE_H = 28
+
+Children first (compact sibling gap GAP_H/3 = 20 because rich nodes are wide):
+  x[j] = 40 + j × (160 + 20)  →  40, 220, 400, 580
+  y    = 190
+
+Children span: 40 … (580 + 160) = 740  →  span center = (40 + 740) / 2 = 390
+
+Root centered over that span (root widened to 240 for emphasis):
+  root x = 390 - 240/2 = 270
+  root y = 58   (directly below title; children top 190 - root bottom 108 = 82 ≈ GAP_V × 1.5)
+
+CANVAS_W = 40 + 700 + 40 = 780
+CANVAS_H = 190 + 90 + 40 = 320
+```
+
+For multi-level trees apply the same rule bottom-up: each subtree's width = max(sum of child subtree widths + gaps, NODE_W); each parent centers over its own children's span, not over the whole canvas.
+
+### Walkthrough 4: `loop` (loop-ml-training.drawio)
 
 ```
 NODE_W = 160, NODE_H = 50, GAP_H = 120, GAP_V = 80, CANVAS_PAD = 40, TITLE_H = 28

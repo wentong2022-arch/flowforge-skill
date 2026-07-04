@@ -96,7 +96,7 @@ Compute `CANVAS_W` and `CANVAS_H` from the layout algorithm's formulas in SKILL.
 
 ### Lane band (swimlane background)
 
-Define ALL lane bands before the step nodes they contain — a filled box drawn after its children hides them.
+Define ALL lane bands before the step nodes they contain — a filled box drawn after its children hides them. For zebra striping, alternate two `bg-*` tints from themes.md instead of `{groupFill}`.
 
 ```xml
 <mxCell id="lane_1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor={groupFill};strokeColor={groupStroke};strokeWidth=1;" parent="1" vertex="1">

@@ -117,9 +117,11 @@ Sibling spacing = NODE_W + GAP_H / 2
 Root: centered at top
 Children: evenly distributed below parent, centered under parent
 
-Subtree width = max(sum of children subtree widths, NODE_W)
-Parent x = leftmost child x + (rightmost child x + NODE_W - leftmost child x) / 2 - NODE_W / 2
+Subtree width = max(sum of children subtree widths + gaps, NODE_W)
+Parent x = center of its children's span - parent width / 2
 ```
+
+Work bottom-up: place the deepest level first, then center each parent over its own children's span. A worked example with real numbers is in examples.md (Walkthrough 3).
 
 ## `hub` — Hub and Spoke (Center Radiate) {#hub}
 
@@ -231,5 +233,5 @@ Step node (lane i, column j):
 
 Rules:
 - Define ALL lane bands before any step node — filled containers drawn after their children hide them.
-- Alternate lane fills between `group` and `neutral` for zebra striping; lane label goes in the left strip as a text cell.
+- Alternate lane fills between two `bg-*` tints of different hue (see Background Tints in themes.md) for zebra striping; lane label goes in the left strip as a text cell.
 - Each process step occupies its own column j (a global step counter), so the flow reads left-to-right even as it crosses lanes; cross-lane arrows run vertically at the column of the target step.

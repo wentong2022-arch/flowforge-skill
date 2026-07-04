@@ -5,6 +5,18 @@ All notable changes to FlowForge will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-07-04
+
+### Added
+- **Background tints (`bg-1`…`bg-5`)** per theme: 25 hue-distinct ultra-light colors for region backdrops, swimlane zebra striping, and filled group boxes — closes the gap where large diagrams invented off-theme pastels (seen in gallery/05); validator recognizes them
+- `tree` coordinate walkthrough in examples.md (bottom-up: children first, parent centered over children's span) — the last diagram family without a worked example
+
+### Changed
+- **Contrast audit**: all 5 themes re-tuned against WCAG targets — text roles ≥ 4.5:1, arrow lines ≥ 3:1, node strokes ≥ 2.5:1 (`group` borders exempt as decorative). 36 values darkened one step in the same hue; theme identities preserved. Biggest fixes: arrow colors (were 2.0–2.6:1 across all themes) and morandi's stroke family
+- Bundled example `.drawio` files recolored attribute-aware (edge strokes → new arrow colors, vertex strokes / font colors → their role's new values); all six re-validate clean
+- `tree` layout algorithm clarified in references/layouts.md (subtree width includes gaps; explicit bottom-up ordering)
+- Swimlane zebra striping now uses `bg-*` tints instead of `group`/`neutral` fills
+
 ## [1.1.0] - 2026-07-04
 
 ### Added

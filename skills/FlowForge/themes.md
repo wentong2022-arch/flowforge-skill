@@ -168,3 +168,29 @@ Indigo + violet, higher saturation. Bold, authoritative.
 | error-label | `#DC2626` |
 | arrow | `#94A3B8` |
 | annotation | `#94A3B8` |
+
+---
+
+## Color Rhythm — Worked Examples
+
+**Bad** (rainbow — every node a different color):
+```
+[neutral] 数据源 → [process] 采集 → [warning] 检查 → [success] 清洗 → [error] 告警 → [storage] 入库
+```
+
+**Bad** (wall of one color — 9 nodes all the same):
+```
+[primary] 提问 → [process] 校验 → [process] 评估 → [process] 翻译 → [process] 执行 → [process] 解读 → [process] 可视化 → [process] 标注 → [primary] 返回
+```
+
+**Good** (short flow, 2-3 colors):
+```
+[neutral] 数据源 → [process] 采集 → [process] 检查 → [process] 清洗 → [primary] 入库
+                                        ↓ (异常)
+                                  [accent] 告警处理
+```
+
+**Good** (long flow, 4-5 colors with rhythm):
+```
+[primary] 提问 → [process] 校验 → [warning] 评估 → [secondary] 翻译 → [process] 执行 → [process] 解读 → [accent] 可视化 → [process] 标注 → [success] 返回
+```

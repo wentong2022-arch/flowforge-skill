@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net">
+    <diagram name="数据存储方案选型决策树" id="tree_mint_001">
+        <mxGraphModel dx="0" dy="0" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="780" pageHeight="320" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <!-- 标题 -->
+                <mxCell id="title_main" value="数据存储方案选型决策树" style="text;html=1;fontSize=18;fontColor=#1A3A3A;align=center;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="10" width="700" height="28" as="geometry"/>
+                </mxCell>
+                <!-- 根节点 -->
+                <mxCell id="node_root" value="选择数据存储方案" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F5F0;strokeColor=#6DBFAB;strokeWidth=1.5;arcSize=10;fontSize=13;fontColor=#1A3A3A;fontStyle=1;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="58" width="240" height="50" as="geometry"/>
+                </mxCell>
+                <!-- 4 个分支 -->
+                <mxCell id="node_b1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCF0E8;strokeColor=#2A9D8F;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="190" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_b1_t" value="&lt;b&gt;结构化数据&lt;/b&gt;" style="text;html=1;fontSize=12;fontColor=#1A3A3A;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="195" width="160" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_b1_b" value="行/列规范，强一致&lt;br&gt;&lt;br&gt;&amp;bull; PostgreSQL&lt;br&gt;&amp;bull; MySQL" style="text;html=1;fontSize=10;fontColor=#5A7A7A;align=center;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="220" width="140" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_b2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCF0E8;strokeColor=#2A9D8F;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="190" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_b2_t" value="&lt;b&gt;半结构化&lt;/b&gt;" style="text;html=1;fontSize=12;fontColor=#1A3A3A;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="195" width="160" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_b2_b" value="JSON / 文档 / 全文&lt;br&gt;&lt;br&gt;&amp;bull; MongoDB&lt;br&gt;&amp;bull; Elasticsearch" style="text;html=1;fontSize=10;fontColor=#5A7A7A;align=center;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="220" width="140" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_b3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCF0E8;strokeColor=#2A9D8F;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="190" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_b3_t" value="&lt;b&gt;时序数据&lt;/b&gt;" style="text;html=1;fontSize=12;fontColor=#1A3A3A;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="195" width="160" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_b3_b" value="高频写入 / 时间序列&lt;br&gt;&lt;br&gt;&amp;bull; InfluxDB&lt;br&gt;&amp;bull; TimescaleDB" style="text;html=1;fontSize=10;fontColor=#5A7A7A;align=center;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="220" width="140" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_b4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#E9A84C;strokeWidth=1.2;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="190" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_b4_t" value="&lt;b&gt;图数据&lt;/b&gt;" style="text;html=1;fontSize=12;fontColor=#1A3A3A;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="195" width="160" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="node_b4_b" value="多对多关系 / 路径查询&lt;br&gt;&lt;br&gt;&amp;bull; Neo4j&lt;br&gt;&amp;bull; Nebula Graph" style="text;html=1;fontSize=10;fontColor=#5A7A7A;align=center;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="220" width="140" height="55" as="geometry"/>
+                </mxCell>
+                <!-- 树枝箭头 -->
+                <mxCell id="arr_root_b1" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#9DC0B7;strokeWidth=0.8;endSize=5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node_root" target="node_b1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_root_b2" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#9DC0B7;strokeWidth=0.8;endSize=5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node_root" target="node_b2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_root_b3" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#9DC0B7;strokeWidth=0.8;endSize=5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node_root" target="node_b3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_root_b4" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#9DC0B7;strokeWidth=0.8;endSize=5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node_root" target="node_b4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

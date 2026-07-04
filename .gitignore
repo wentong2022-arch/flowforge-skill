@@ -22,3 +22,7 @@ diagrams/
 *.tmp
 *.bak
 ~*
+
+# Skill eval workspace & per-project FlowForge config
+skills/FlowForge-workspace/
+.flowforge.json

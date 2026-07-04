@@ -94,6 +94,34 @@ Compute `CANVAS_W` and `CANVAS_H` from the layout algorithm's formulas in SKILL.
 </mxCell>
 ```
 
+### Lane band (swimlane background)
+
+Define ALL lane bands before the step nodes they contain — a filled box drawn after its children hides them.
+
+```xml
+<mxCell id="lane_1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor={groupFill};strokeColor={groupStroke};strokeWidth=1;" parent="1" vertex="1">
+    <mxGeometry x="{x}" y="{y}" width="{w}" height="{LANE_H}" as="geometry"/>
+</mxCell>
+<mxCell id="lane_1_label" value="&lt;b&gt;Role A&lt;/b&gt;" style="text;html=1;fontSize=12;fontColor={titleColor};align=center;verticalAlign=middle;" parent="1" vertex="1">
+    <mxGeometry x="{x}" y="{y}" width="{LANE_LABEL_W}" height="{LANE_H}" as="geometry"/>
+</mxCell>
+```
+
+### Decorative line (timeline axis, hub ray)
+
+Unbound line anchored to explicit coordinates — no source/target nodes, no arrowhead:
+
+```xml
+<mxCell id="line_main" style="endArrow=none;strokeColor={arrowColor};strokeWidth=2.5;" parent="1" edge="1">
+    <mxGeometry relative="1" as="geometry">
+        <mxPoint x="{x1}" y="{y}" as="sourcePoint"/>
+        <mxPoint x="{x2}" y="{y}" as="targetPoint"/>
+    </mxGeometry>
+</mxCell>
+```
+
+For hub rays, bind source/target to the center and spoke nodes instead, keep `endArrow=none`, and omit `edgeStyle` (straight radial lines are intended here).
+
 ### Cylinder (database/storage)
 
 ```xml

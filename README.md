@@ -39,7 +39,7 @@ FlowForge is a [Claude Code](https://code.claude.com) skill that generates profe
 
 ```bash
 # In Claude Code
-/plugin install https://github.com/winstonyoyo/flowforge-skill
+/plugin install https://github.com/wentong2022-arch/flowforge-skill
 ```
 
 Or add to your plugin marketplace and install from there.
@@ -49,7 +49,7 @@ Or add to your plugin marketplace and install from there.
 Clone this repo and copy the skill directory to your Claude Code skills folder:
 
 ```bash
-git clone https://github.com/winstonyoyo/flowforge-skill.git
+git clone https://github.com/wentong2022-arch/flowforge-skill.git
 cp -r flowforge-skill/skills/FlowForge ~/.claude/skills/
 # Or for project-scoped:
 cp -r flowforge-skill/skills/FlowForge ./.claude/skills/
@@ -200,4 +200,4 @@ Built following the design principles in [Lessons from Building Claude Code: How
 
 ## License
 
-[MIT](LICENSE) © 2026 [winstonyoyo](https://github.com/winstonyoyo)
+[MIT](LICENSE) © 2026 [winstonyoyo](https://github.com/wentong2022-arch)
